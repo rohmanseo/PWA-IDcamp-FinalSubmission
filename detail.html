@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Barclays Premiere League</title>
+    <meta name="description" content="EPL" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" href="/img/icon-192.png" />
+    <link rel="apple-touch-icon" href="/img/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#607d8b" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav class="blue-grey" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="index.html" class="brand-logo" id="logo-container"
+            >WebApp Soccer</a
+          >
+          <a href="./index.html" class="left" data-target="nav-mobile">
+            <i class="material-icons">arrow_back</i>
+          </a>
+  
+          <ul class="topnav right hide-on-med-and-down">
+            <li><a href="favorit.html">Tim Favorit</a></li>
+          </ul>
+          <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+      </nav>
+    <!-- Akhir Navigasi -->
+
+    <div class="container" id="body-content"></div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/sw-register.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/api.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded",  function() {
+          getClubById();
+      });
+    </script>
+  </body>
+</html>

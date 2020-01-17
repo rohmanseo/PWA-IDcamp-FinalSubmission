@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EPL</title>
+    <meta name="description" content="EPL" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="icon" href="/img/icon-192.png" />
+    <link rel="apple-touch-icon" href="/img/icon-192.png" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="theme-color" content="#607d8b" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav class="blue-grey" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo" id="logo-container"
+          >App Soccer</a
+        >
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">&#9776;</a>
+
+        <ul class="topnav right hide-on-med-and-down">
+          <li><a href="favorit.html">Tim Favorit</a></li>
+        </ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+    <div class="container" id="body-content">
+      <h4 class="center">Favorite Teams</h4>
+
+      <table class="responsive-table highlight">
+        <thead>
+          <tr>
+            <th>Nama Tim</th>
+            <th class="center">Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="clubs"></tbody>
+      </table>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/sw-register.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/favorites.js"></script>
+  </body>
+</html>
